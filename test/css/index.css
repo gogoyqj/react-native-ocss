@@ -1,0 +1,15 @@
+@import url("global.css")
+@import url("common.css")
+
+.dialog, .pop {
+    color: $color;
+    font-size: $size;
+}
+
+.show {
+    font-color: $color;
+}
+
+.warning {
+    font-size: $size;
+}
