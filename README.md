@@ -1,17 +1,24 @@
-#### ***文中链接各位根据自己项目对应修改***
---------------------------------------------------------------------------------
-#### **项目管理**：
-#### *sp*:(http://sp.corp.qunar.com/default.aspx)<br />
+#### 使用说明
 
-#### *jira*:(http://task.corp.qunar.com/browse/)<br />
---------------------------------------------------------------------------------
-#### **发布相关**:
-#### *devbds*:(http://devbds.corp.qunar.com/jenkins/)<br />
-#### *bds*:(http://bds.corp.qunar.com/jenkins/)<br />
---------------------------------------------------------------------------------
-#### **质量管理**:
-#### *bugfree*:(http://svn.corp.qunar.com/bugfree)<br />
-#### *case*:(http://bugfree.corp.qunar.com/bugfree/index.php/case)<br />
---------------------------------------------------------------------------------
-#### **项目信息**:
-#### *wiki*:(http://wiki.corp.qunar.com/)<br />
+
+##### 人肉安装
+
+为毛不能发布到qnpm了。。。
+
+```
+    git clone http://gitlab.corp.qunar.com/fed/react-native-ocss.git yourdir
+    cd /user/bin
+    sudo ln -s yourdir/index.js react-native-ocss
+    sudo chmod +x react-native-ocss
+```
+
+
+##### 使用
+
+```
+    react-native-ocss compile input.css output.js
+
+    -f format 指定输出格式，支持amd，commonjs
+    -b beauty 格式化
+    -w watch  监控
+```
