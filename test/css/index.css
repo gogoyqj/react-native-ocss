@@ -11,5 +11,12 @@
 }
 
 .warning {
-    font-size: $size;
+    font-size: xxxx;
+}
+.movie {
+    // nihao
+    /**/
+    transform:rotate(7deg, 9deg);
+    -ms-transform:rotate(7deg, 9deg);     /* IE 9 */
+    -moz-transform:rotate(7deg, 9deg);    /* Firefox */
 }
