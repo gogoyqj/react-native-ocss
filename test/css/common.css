@@ -12,6 +12,8 @@ $color=#ff0000
 #only {
     height: $height;
     color: $sb;
+    background: $color;
 }
+
 
 
