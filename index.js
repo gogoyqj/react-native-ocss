@@ -19,7 +19,7 @@ function parse(input, output, option) {
     if (output === undefine) {
         output = input.replace(/\.[\S]+$/g, "") + ".js"
     }
-    var tree = parser.fileParser("test/css/index.css")
+    var tree = parser.fileParser(input)
     var cssJS = reactivable.reactivable(tree)
 
     var format = option.format || option.commonjs && "commonjs" || option.amd && "amd" || option.browser && "browser"
@@ -62,18 +62,20 @@ program
             if (fs.existsSync(option.watch)) {
                 toWatch = option.watch
             }
-            console.log("正在监听: ", toWatch);
+            console.log("【Log】：正在监听: ", toWatch);
             console.log("ctrl + c to exit");
             fs.watch(toWatch, function (event, filename) {
                 var isCss = filename.indexOf('.css') > -1;
 
                 if (filename === input || isCss) {
-                    console.log("正在编译: " + filename);
+                    console.log("【Log】：正在编译: " + filename);
 
                     parse(input, output, option);
                 }
             });
 
+        } else {
+            console.log("【Log】：转换" + input + "完成")
         }
     })
 
