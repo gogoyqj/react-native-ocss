@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var program = require("commander")
 var parser = require("./lib/parser.js")
 var reactivable = require("./lib/reactivable.js")
