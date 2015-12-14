@@ -2,9 +2,12 @@
   "name": "react-native-ocss",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "mocha -R nyan test/test.js"
+  },
+  "bin": {
+    "css-beautify": "./index.js"
   },
   "dependencies": {
     "commander": ">= 2.9.0",
