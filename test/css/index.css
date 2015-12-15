@@ -9,14 +9,15 @@
 .show {
     font-color: $color;
 }
-
+$xxxx=12px
 .warning {
-    font-size: xxxx;
+    font-size: $xxxx;
 }
+$nima=7deg
 .movie {
     // nihao
     /**/
-    transform:rotate(7deg, 9deg);
+    transform:rotate($nima, 9deg);
     -ms-transform:rotate(7deg, 9deg);     /* IE 9 */
     -moz-transform:rotate(7deg, 9deg);    /* Firefox */
 }
@@ -32,5 +33,5 @@
     }
 }
 .mixin {
-    @test $size 14 blue
+    @test $size blue
 }
