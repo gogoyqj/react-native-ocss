@@ -1,0 +1,18 @@
+@define-mixin test $color:blue {
+    color: $color;
+}
+
+@define-mixin test2 $color:blue {
+    .hellow {
+        color: $color;
+    }
+}
+
+
+.nihao {
+    @test #fff
+}
+
+@test2
+
+@test2 red

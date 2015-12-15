@@ -20,3 +20,17 @@
     -ms-transform:rotate(7deg, 9deg);     /* IE 9 */
     -moz-transform:rotate(7deg, 9deg);    /* Firefox */
 }
+@define-mixin test $size: 12, $color:blue {
+    color: $color;
+    font-size: $size;
+}
+
+@define-mixin test2 $size: 12, $color:blue {
+    .dialog {
+        color: $color;
+        font-size: $size;
+    }
+}
+.mixin {
+    @test $size 14 blue
+}
