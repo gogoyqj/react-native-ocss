@@ -104,6 +104,29 @@ $width = 200px
 
 #### 输出
 
+##### 输入文件
+
+```
+@define-mixin test $color:blue {
+    color: $color;
+}
+
+@define-mixin test2 $color:blue {
+    .hellow {
+        color: $color;
+    }
+}
+
+.nihao {
+    @test #fff
+}
+
+@test2
+
+@test2 red
+```
+##### log
+
 ```
     【Error】：未能解析的样式：nidaya，文件：/Users/qitmac000420/project/react-native-ocss/test/css/common.css，className：.slider
     【Error】：未能查找到变量：$sb，文件：/Users/qitmac000420/project/react-native-ocss/test/css/common.css，className：#only
@@ -113,4 +136,17 @@ $width = 200px
     【Error】：赋给属性fontSize【font-size】的值不对：xxxx【xxxx】，文件：/Users/qitmac000420/project/react-native-ocss/test/css/index.css，className：.warning
     【Log】：转换test/css/index.css完成
 
+```
+
+##### 输出文件
+
+```
+module.exports.styles = StyleSheet.create({
+    "nihao": {
+        "color": "#fff"
+    },
+    "hellow": {
+        "color": "red"
+    }
+});
 ```
