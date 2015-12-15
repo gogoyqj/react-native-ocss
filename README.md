@@ -2,8 +2,9 @@
 
 #### 干嘛
 
-.将css转换成对应的react-native-js
-.自动检测并提醒属性是否被react-native所支持
+1.将css转换成对应的react-native-js
+
+2.自动检测并提醒属性是否被react-native所支持
 
 #### 人肉安装
 
