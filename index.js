@@ -20,7 +20,7 @@ function parse(input, output, option) {
     if (output === undefine) {
         output = input.replace(/\.[\S]+$/g, "") + ".js"
     }
-    var tree = parser.fileParser(input)
+    var tree = parser.fileParser(input, null, null, option)
     var cssJS = reactivable.reactivable(tree)
 
     var format = option.format || option.commonjs && "commonjs" || option.amd && "amd" || option.browser && "browser"
@@ -46,6 +46,7 @@ program
     .command("compile [input] [output]")
     .option("-b, --beauty [beauty]", "格式化输出文件")
     .option("-i, --indent [indent]", "格式时候指定缩进缩进")
+    .option("-l, --log [log]", "指定输出log的种类，默认输出all，可选error，warning，log")
     .option("-f, --format <format>", "指定输出格式")
     .option("-C, --commonjs [commonjs]", "输出符合commonjs规范的文件")
     .option("-A, --amd [amd]", "输出符合commonjs规范的文件")
@@ -63,20 +64,20 @@ program
             if (fs.existsSync(option.watch)) {
                 toWatch = option.watch
             }
-            console.log("【Log】：正在监听: ", toWatch);
+            console.log("正在监听: ", toWatch);
             console.log("ctrl + c to exit");
             fs.watch(toWatch, function (event, filename) {
                 var isCss = filename.indexOf('.css') > -1;
 
                 if (filename === input || isCss) {
-                    console.log("【Log】：正在编译: " + filename);
+                    console.log("正在编译: " + filename);
 
                     parse(input, output, option);
                 }
             });
 
         } else {
-            console.log("【Log】：转换" + input + "完成")
+            console.log("转换" + input + "完成")
         }
     })
 
