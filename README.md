@@ -11,7 +11,7 @@
 为毛不能发布到qnpm了。。。
 
 ```
-    git clone http://gitlab.corp.qunar.com/fed/react-native-ocss.git yourdir
+    git clone https://github.com/gogoyqj/react-native-ocss.git yourdir
     npm install
     cd /user/bin
     sudo ln -s yourdir/index.js react-native-ocss
