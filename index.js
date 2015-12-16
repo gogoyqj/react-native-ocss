@@ -6,11 +6,11 @@ var js_beautify = require('js-beautify').js_beautify
 var fs = require("fs")
 
 var undefine
-var prefix = "var styles = " // 普通文件
+var prefix = "var StyleSheet = reactNative.StyleSheet;var styles = " // 普通文件
 var suffix = ";"
-var amdPrefix = "define([], function() { " + prefix // amd
+var amdPrefix = "define([\"react-native\"], function(reactNative) {" + prefix // amd
 var amdSuffix = "; return styles});"
-var commonjsPrefix = "module.exports.styles = " // cmd
+var commonjsPrefix = "module.exports.styles = require('react-native')." // cmd
 var commonjsSuffix = ";"
 
 program
