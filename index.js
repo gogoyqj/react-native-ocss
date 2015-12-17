@@ -43,8 +43,9 @@ function parse(input, output, option) {
 }
 
 program
-    .command("compile [input] [output]")
+    .usage("[options] <input> [output]")
     .option("-b, --beauty [beauty]", "格式化输出文件，默认美化")
+    .option("-o, --output [output]", "输出")
     .option("-i, --indent [indent]", "格式时候指定缩进缩进")
     .option("-l, --log [log]", "指定输出log的种类，默认输出all，可选error，warning，log")
     .option("-f, --format <format>", "指定输出格式")
@@ -52,9 +53,12 @@ program
     .option("-A, --amd [amd]", "输出符合commonjs规范的文件")
     .option("-B, --browser [browser]", "输出browser格式文件")
     .option("-w, --watch [watch]", "监听文件变化，实时替换")
-    .description("转化css为react-native-css js")
-    .action(function(input, output, option) {
+    .description("转化css为react-native-css js，并检测使用的属性是否被支持")
+    .action(function(input, output) {
+        var option = arguments[arguments.length - 1]
         if (option.beauty === undefine) option.beauty = true // 默认美化
+        if (option.beauty in {"0":"", "false": ""}) option.beauty = false
+        var output = typeof output === "string" ? output : option.output
         if (output === undefine) {
             output = input.replace(/\.[\S]+$/g, "") + ".js"
         }

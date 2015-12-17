@@ -13,9 +13,12 @@
 ```
     git clone https://github.com/gogoyqj/react-native-ocss.git yourdir
     npm install
-    cd /user/bin
+    cd /usr/bin
     sudo ln -s yourdir/index.js react-native-ocss
     sudo chmod +x react-native-ocss
+
+    // or
+    sh install.sh
 ```
 
 

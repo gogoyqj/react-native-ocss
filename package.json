@@ -7,12 +7,19 @@
     "test": "mocha -R nyan test/test.js"
   },
   "bin": {
-    "css-beautify": "./index.js"
+    "rcss": "./index.js"
   },
+  "keywords": [
+    "react-native-css",
+    "convert"
+  ],
   "dependencies": {
     "commander": ">= 2.9.0",
     "js-beautify": ">= 1.5.10"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "yangqianjun",
+  "license": "ISC",
+   "bugs": {
+    "url": "https://github.com/gogoyqj/react-native-ocss/issues"
+  }
 }
