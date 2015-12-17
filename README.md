@@ -6,6 +6,12 @@
 
 2.自动检测并提醒属性是否被react-native所支持
 
+#### npm安装
+
+```
+npm install -g react-native-ocss
+```
+
 #### 人肉安装
 
 为毛不能发布到qnpm了。。。
@@ -25,9 +31,10 @@
 #### 使用
 
 ```
-    react-native-ocss compile input.css [output.js]
+    rcss [options] input.css [output.js]
 
     .option("-b, --beauty [beauty]", "格式化输出文件")
+    .option("-o, --output [output]", "输出")
     .option("-i, --indent [indent]", "格式时候指定缩进缩进")
     .option("-l, --log [log]", "指定输出log的种类，默认输出all，可选error，warning，log")
     .option("-f, --format <format>", "指定输出格式")
