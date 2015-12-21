@@ -27,7 +27,7 @@ $nima=7deg
 }
 
 @define-mixin test2 $size: 12, $color:blue {
-    .dialog {
+    .dialog2 {
         color: $color;
         font-size: $size;
     }
@@ -35,3 +35,4 @@ $nima=7deg
 .mixin {
     @test $size blue
 }
+@test2
