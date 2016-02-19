@@ -72,7 +72,7 @@ program
             console.log("正在监听: ", toWatch);
             console.log("ctrl + c to exit");
             fs.watch(toWatch, function (event, filename) {
-                var isCss = filename.indexOf('.css') > -1;
+                var isCss = filename.match(/\.[s]?css/g);
 
                 if (filename === input || isCss) {
                     console.log("正在编译: " + filename);

@@ -5,12 +5,13 @@ var reactivable = require("../lib/reactivable.js")
 var data = require("./data/data.js")
 
 
-describe('mr', function () {
-    // var tree = parser.fileParser("test/css/index.css")
-
-    var tree = data.data
-    // console.log(JSON.stringify(tree))
+describe('parse.postcss', function () {
+    var tree = parser.fileParser("test/for-postcss/css/index.css")
     var css = reactivable.reactivable(tree)
-    console.log(css)
+});
+
+describe('parse.sass', function () {
+    var tree = parser.fileParser("test/for-sass/css/index.scss")
+    var css = reactivable.reactivable(tree)
 });
 

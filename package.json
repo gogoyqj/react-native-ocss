@@ -15,7 +15,8 @@
   ],
   "dependencies": {
     "commander": ">= 2.9.0",
-    "js-beautify": ">= 1.5.10"
+    "js-beautify": ">= 1.5.10",
+    "node-sass": ">= 3.4.2"
   },
   "author": "yangqianjun",
   "license": "ISC",

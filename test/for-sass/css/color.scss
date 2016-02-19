@@ -1,0 +1,6 @@
+$link-color: blue;
+$link-color: red;
+a {
+color: $link-color;
+font-color: $link-color;
+}

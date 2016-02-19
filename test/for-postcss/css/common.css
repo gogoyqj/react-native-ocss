@@ -15,5 +15,8 @@ $color=#ff0000
     background: $color;
 }
 
+.a .b {
+    font: 12px;
+}
 
 
