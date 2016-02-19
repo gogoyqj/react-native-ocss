@@ -6,6 +6,8 @@
 
 2.自动检测并提醒属性是否被react-native所支持
 
+3.识别.scss文件，并调用node-sass将其转化为css，并最终转化为react-native-js文件
+
 #### npm安装
 
 ```
