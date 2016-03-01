@@ -3,6 +3,7 @@ module.exports.styles = require('react-native').StyleSheet.create({
         "width": 400
     },
     "a": {
-        "color": "red"
+        "color": "red",
+        "fontColor": "red"
     }
 });

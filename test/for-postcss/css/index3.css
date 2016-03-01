@@ -1,0 +1,10 @@
+.a {
+    border: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-radius: 10px 2px 3px  
+}
+.a2 {
+    border: 2px dashed #fff;
+    border-left: 3px solid #fff;
+    border-radius: 12px 6px  
+}

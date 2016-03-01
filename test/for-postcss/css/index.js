@@ -16,7 +16,9 @@ module.exports.styles = require('react-native').StyleSheet.create({
     "movie": {
         "transform": [{
             "rotate": "7deg, 9deg"
-        }]
+        }],
+        "borderLeftColor": "#ccc",
+        "borderRadius": 10
     },
     "mixin": {
         "color": "blue",

@@ -68,6 +68,37 @@ npm install -g react-native-ocss
 @import url(other.css)
 @import url("other2.css")
 
+// 自动转换支持react-native不直接支持的几个属性
+.class2 {
+    border: 1px solid #ccc;
+}
+//==>等价于
+.class2 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+.class {
+    border-left: 1px solid #ccc;
+}
+//==>等价于
+.class {
+    border-left-width: 1px;
+    border-style: solid;
+    border-left-color: #ccc;
+}
+
+.class3 {
+    border-radius: 1px 2px 3px;
+}
+//==>等价于
+.class3 {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 2px;
+}
 ```
 
 ##### 变量
