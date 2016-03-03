@@ -32,6 +32,7 @@ npm install -g react-native-ocss
 
 #### 使用
 
+##### cli
 ```
     rcss [options] input.css [output.js]
 
@@ -44,6 +45,29 @@ npm install -g react-native-ocss
     .option("-A, --amd [amd]", "输出符合commonjs规范的文件")
     .option("-B, --browser [browser]", "输出browser格式文件")
     .option("-w, --watch [watch]", "监听文件变化，实时替换")
+```
+
+##### require
+```
+    var stylesObject = rss.parserString(`
+        .test {
+            border: $testBorder solid $testBorderColor;
+        }
+        .xx {
+            border-left: $testBorder solid $testBorderColor;
+            font-color: blue;
+        }
+    `, {
+        testBorder: 1,
+        testBorderColor: "#fff",
+    })
+
+    var stylesObject = rss.parserFile("../css/index.css", {
+        testBorder: 1,
+        testBorderColor: "#fff",
+    }) 
+
+    var styles = require('react-native').StyleSheet.create(stylesObject)
 ```
 
 

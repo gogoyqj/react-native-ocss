@@ -12,11 +12,14 @@ var amdPrefix = "define([\"react-native\"], function(reactNative) {" + prefix //
 var amdSuffix = "; return styles});"
 var commonjsPrefix = "module.exports.styles = require('react-native')." // cmd
 var commonjsSuffix = ";"
+var path = require('path')
 
 program
     .version("0.0.1")
 
 function parse(input, output, option) {
+    // 弄成绝对路径
+    input = path.resolve(process.cwd(), input)
     if (output === undefine) {
         output = input.replace(/\.[\S]+$/g, "") + ".js"
     }
