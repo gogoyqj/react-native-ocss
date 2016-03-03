@@ -49,6 +49,8 @@ npm install -g react-native-ocss
 
 ##### require
 ```
+    var rss = require("react-native-ocss")
+    
     var stylesObject = rss.parserString(`
         .test {
             border: $testBorder solid $testBorderColor;
