@@ -125,13 +125,13 @@ npm install -g react-native-ocss
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 2px;
 }
-```
 
 // 支持将原生的以下写法转换为react-native写法
 .a {
     margin: *;
     padding: *;
 }
+```
 
 ##### 变量
 

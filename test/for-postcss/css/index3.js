@@ -84,5 +84,12 @@ module.exports.styles = require('react-native').StyleSheet.create({
         }, {
             "translateY": 10
         }]
+    },
+    "i": {
+        "transform": [{
+            "perspective": 600
+        }, {
+            "rotateY": "45deg"
+        }]
     }
 });
