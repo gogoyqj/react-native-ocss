@@ -80,7 +80,7 @@ npm install -g react-native-ocss
 
 ##### 普通css
 
-注意：不支持层叠，嵌套，不能通过import循环引用
+注意：不支持层叠，嵌套，不能通过import循环引用，类名a-bc-def会被转换成aBcDef
 
 ```
 // 单行注释

@@ -37,6 +37,52 @@ module.exports.styles = require('react-native').StyleSheet.create({
     "d": {
         "marginTop": 1,
         "marginBottom": 4,
-        "marginHorizontal": 3
+        "marginHorizontal": 3,
+        "position": "relative"
+    },
+    "e": {
+        "transform": [{
+            "rotate": "7deg"
+        }]
+    },
+    "f": {
+        "transform": [{
+            "scaleX": 2
+        }, {
+            "scaleY": 4
+        }]
+    },
+    "f1": {
+        "transform": [{
+            "scale": 2
+        }]
+    },
+    "g": {
+        "transform": [{
+            "skewX": "30deg"
+        }, {
+            "skewY": "20deg"
+        }]
+    },
+    "g1": {
+        "transform": [{
+            "skewX": "30deg"
+        }, {
+            "skewY": "30deg"
+        }]
+    },
+    "h": {
+        "transform": [{
+            "translateX": 10
+        }, {
+            "translateY": 10
+        }]
+    },
+    "h1": {
+        "transform": [{
+            "translateX": 10
+        }, {
+            "translateY": 10
+        }]
     }
 });

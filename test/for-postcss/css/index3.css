@@ -20,4 +20,27 @@
 
 .d {
     margin: 1px 3px 4px;
+    position: relative;
+}
+.e {
+    transform: rotate(7deg);
+}
+
+.f {
+    transform: scale(2,4);
+}
+.f1 {
+    transform: scale(2);
+}
+.g {
+    transform: skew(30deg,20deg);
+}
+.g1 {
+    transform: skew(30deg);
+}
+.h {
+    transform: translate(10px, 10px);
+}
+.h1 {
+    transform: translate(10px);
 }
