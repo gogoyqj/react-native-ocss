@@ -1,6 +1,6 @@
 {
   "name": "react-native-ocss",
-  "version": "1.2.0",
+  "version": "1.2.4",
   "description": "",
   "main": "./lib/parser.js",
   "scripts": {

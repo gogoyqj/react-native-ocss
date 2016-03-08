@@ -20,5 +20,23 @@ module.exports.styles = require('react-native').StyleSheet.create({
         "borderTopRightRadius": 6,
         "borderBottomLeftRadius": 6,
         "borderBottomRightRadius": 12
+    },
+    "b": {
+        "marginVertical": 0,
+        "marginHorizontal": 20,
+        "paddingVertical": 10,
+        "paddingHorizontal": 0
+    },
+    "c": {
+        "margin": 0,
+        "paddingTop": 1,
+        "paddingBottom": 3,
+        "paddingRight": 2,
+        "paddingLeft": 4
+    },
+    "d": {
+        "marginTop": 1,
+        "marginBottom": 4,
+        "marginHorizontal": 3
     }
 });

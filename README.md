@@ -127,6 +127,12 @@ npm install -g react-native-ocss
 }
 ```
 
+// 支持将原生的以下写法转换为react-native写法
+.a {
+    margin: *;
+    padding: *;
+}
+
 ##### 变量
 
 局部变量的作用域在定义他的文件，全局变量所有文件都可以引用，对应到react-native style的属性类型未number的，会去掉单位自动转化为数字
