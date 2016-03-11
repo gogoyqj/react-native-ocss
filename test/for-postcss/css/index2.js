@@ -1,4 +1,4 @@
-module.exports.styles = StyleSheet.create({
+module.exports.styles = require('react-native').StyleSheet.create({
     "nihao": {
         "color": "#fff"
     },

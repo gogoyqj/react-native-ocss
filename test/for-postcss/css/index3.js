@@ -42,40 +42,40 @@ module.exports.styles = require('react-native').StyleSheet.create({
     },
     "e": {
         "transform": [{
-            "rotate": "7deg"
+            "rotate": "1deg"
         }]
     },
     "f": {
         "transform": [{
-            "scaleX": 2
+            "scaleX": 1
         }, {
-            "scaleY": 4
+            "scaleY": 2
         }]
     },
     "f1": {
         "transform": [{
-            "scale": 2
+            "scale": 1
         }]
     },
     "g": {
         "transform": [{
-            "skewX": "30deg"
+            "skewX": "10deg"
         }, {
             "skewY": "20deg"
         }]
     },
     "g1": {
         "transform": [{
-            "skewX": "30deg"
+            "skewX": "10deg"
         }, {
-            "skewY": "30deg"
+            "skewY": "10deg"
         }]
     },
     "h": {
         "transform": [{
             "translateX": 10
         }, {
-            "translateY": 10
+            "translateY": 20
         }]
     },
     "h1": {

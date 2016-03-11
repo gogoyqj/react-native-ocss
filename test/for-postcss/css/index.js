@@ -15,7 +15,7 @@ module.exports.styles = require('react-native').StyleSheet.create({
     },
     "movie": {
         "transform": [{
-            "rotate": "7deg, 9deg"
+            "rotate": "7deg"
         }]
     },
     "mixin": {

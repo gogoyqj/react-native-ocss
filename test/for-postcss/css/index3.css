@@ -23,23 +23,23 @@
     position: relative;
 }
 .e {
-    transform: rotate(7deg);
+    transform: rotate(1deg);
 }
 
 .f {
-    transform: scale(2,4);
+    transform: scale(1,2);
 }
 .f1 {
-    transform: scale(2);
+    transform: scale(1);
 }
 .g {
-    transform: skew(30deg,20deg);
+    transform: skew(10deg, 20deg);
 }
 .g1 {
-    transform: skew(30deg);
+    transform: skew(10deg);
 }
 .h {
-    transform: translate(10px, 10px);
+    transform: translate(10px, 20px);
 }
 .h1 {
     transform: translate(10px);
