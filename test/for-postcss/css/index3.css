@@ -51,3 +51,8 @@
     text-decoration: underline line-through;
     text-decoration-style: dotted; 
 }
+$nihao=#888888
+.k {
+    box-shadow: 10px 10px 5px $nihao,10px 10px 5px #333;
+    shadow-opacity: 0.4;
+}

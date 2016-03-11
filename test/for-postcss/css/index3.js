@@ -95,5 +95,14 @@ module.exports.styles = require('react-native').StyleSheet.create({
     "j": {
         "textDecorationLine": "underline line-through",
         "textDecorationStyle": "dotted"
+    },
+    "k": {
+        "shadowColor": "#888888",
+        "shadowOffset": {
+            "width": 10,
+            "height": 10
+        },
+        "shadowRadius": 5,
+        "shadowOpacity": 0.4
     }
 });
