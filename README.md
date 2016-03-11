@@ -131,6 +131,21 @@ npm install -g react-native-ocss
     margin: *;
     padding: *;
 }
+
+// 支持将box-shadow转换
+.c {
+    // box-shadow: 10px 12px 6px #000;
+    box-shadow: 10px 12px 5px 6px #000 inset;
+}
+==>转换为==>
+c: {
+    "shadowColor": "#000",
+    "shadowOffset": {
+        "width": 10,
+        "height": 12
+    },
+    "shadowRadius": 6,
+}
 ```
 
 ##### 变量
