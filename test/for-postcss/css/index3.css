@@ -47,3 +47,7 @@
 .i {
     transform: perspective(600px) rotateY(45deg);
 }
+.j {
+    text-decoration: underline line-through;
+    text-decoration-style: dotted; 
+}

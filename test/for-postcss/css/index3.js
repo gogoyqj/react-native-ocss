@@ -91,5 +91,9 @@ module.exports.styles = require('react-native').StyleSheet.create({
         }, {
             "rotateY": "45deg"
         }]
+    },
+    "j": {
+        "textDecorationLine": "underline line-through",
+        "textDecorationStyle": "dotted"
     }
 });
